@@ -1,0 +1,13 @@
+{
+    "name": "vendor/amazon-statement",
+    "description": "Description of project login PHP with bootstrap and sidebar.",
+    "authors": [
+        {
+            "name": "Steven Smith",
+            "email": "stevenpetersmi@gmail.com"
+        }
+    ],
+    "require": {
+            "php-console/php-console": "^3.1"
+    }
+}
