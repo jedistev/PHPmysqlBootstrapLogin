@@ -8,7 +8,14 @@ Using on the Bootstrap themes 'freelancer'
 https://startbootstrap.com/template-overviews/freelancer/
 
 To build a Database 
-create a datbase 'weblogin' or you can import SQL files in the 'Create Table' folder 
+Create a datbase 'weblogin' or you can import SQL files in the 'Create Table' folder 
+
+
+Create a Sample of Bootstrap login for localhost, it's for a pratice to learn how to use login. 
+
+# IMPORTANT. PlEASE READ IT
+It not recomment to use this login for Web online due to a security flaw on md5, I would recommmed to use sha512 or better cryption than md5
+see more on http://php.net/manual/en/faq.passwords.php
 
 Run in the LAMP or any AMP.
 
