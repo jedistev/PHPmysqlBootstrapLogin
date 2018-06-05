@@ -1,16 +1,36 @@
+<?php
+/**
+ * For PHP Bootstrap login.
+ * 
+ * PHP version: 7.1.9
+ *
+ * Create a Sample of Bootstrap login for localhost 
+ * pratice to learn how to use login. 
+ * it not recomment to use online as security flaw on md5
+ * require auth.php file on all secure pages
+ *
+ * @category  PHP
+ * @package   Bootstrap_Login_PHP
+ * @author    Steven Smith <jedistev@gmail.com>
+ * @copyright 2018 nah ltd 
+ * @license   https://github.com/jedistev/PHPmysqlBootstrapLogin/blob/master/LICENSE 
+ * License
+ * @link      https://github.com/jedistev/PHPmysqlBootstrapLogin
+ */
+?>
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-    <?php include 'nav/meta.php'; ?>
-    <?php include 'nav/css.php'; ?>
+    <?php require 'nav/meta.php'; ?>
+    <?php require 'nav/css.php'; ?>
     <link href="css/signin.css" rel="stylesheet">
 </head>
 
 <body>
     <?php
-        require('config/config.php');
+        require'config/config.php';
         session_start();
 // If form submitted, insert values into the database.
         if (isset($_POST['username'])) {
@@ -40,12 +60,21 @@ and password='" . md5($password) . "'";
                 <h2 class="form-signin-heading">Sign in</h2>
 
                 <label for="inputEmail" class="sr-only">Username</label>
-                <input class="form-control" type="text" name="username" placeholder="Username" required autofocus />
+                <input class="form-control" 
+                        type="text" 
+                        name="username" 
+                        placeholder="Username" required autofocus />
 
                 <label for="inputPassword" class="sr-only">Password</label>
-                <input class="form-control" type="password" name="password" placeholder="Password" required />
+                <input class="form-control" 
+                        type="password" 
+                        name="password" 
+                        placeholder="Password" required />
 
-                <input class="btn btn-lg btn-primary btn-block" name="submit" type="submit" value="Login" />
+                <input class="btn btn-lg btn-primary btn-block" 
+                        name="submit" 
+                        type="submit" 
+                        value="Login" />
             </form>
             <p class="text-center">Not Registered Yet?
                 <a href='registration.php'>Register Here</a>
