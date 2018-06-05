@@ -1,3 +1,23 @@
+<?php
+/**
+ * For PHP Bootstrap login.
+ * 
+ * PHP version: 7.1.9
+ *
+ * Create a Sample of Bootstrap login for localhost 
+ * pratice to learn how to use login. 
+ * it not recomment to use online as security flaw on md5
+ * require auth.php file on all secure pages
+ *
+ * @category  PHP
+ * @package   Bootstrap_Login_PHP
+ * @author    Steven Smith <jedistev@gmail.com>
+ * @copyright 2018 nah ltd 
+ * @license   https://github.com/jedistev/PHPmysqlBootstrapLogin/blob/master/LICENSE 
+ * License
+ * @link      https://github.com/jedistev/PHPmysqlBootstrapLogin
+ */
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -33,12 +53,27 @@ VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
     }else{
 ?>
                 <div class="container">
-                        <form class="form-signin" name="registration" action="" method="post">
+                        <form class="form-signin" 
+                                name="registration" 
+                                action="" 
+                                method="post">
                                 <h2 class="form-signin-heading">Registration</h2>
-                                <input class="form-control" type="text" name="username" placeholder="Username" required />
-                                <input class="form-control" type="email" name="email" placeholder="Email" required />
-                                <input class="form-control" type="password" name="password" placeholder="Password" required />
-                                <input class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Register" />
+                                <input class="form-control" 
+                                        type="text" 
+                                        name="username" 
+                                        placeholder="Username" required />
+                                <input class="form-control" 
+                                        type="email" 
+                                        name="email" 
+                                        placeholder="Email" required />
+                                <input class="form-control" 
+                                        type="password" 
+                                        name="password" 
+                                        placeholder="Password" required />
+                                <input class="btn btn-lg btn-primary btn-block" 
+                                        type="submit" 
+                                        name="submit" 
+                                        value="Register" />
                         </form>
                         <p class="text-center">Already Registered
                                 <a href='login.php'>Back to Login Pages</a>
